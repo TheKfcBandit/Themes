@@ -1,0 +1,11 @@
+[Icon Theme]
+Name=Slate
+Comment=Slate icons for Prism Launcher
+Inherits=flat_white
+Directories=scalable
+
+[scalable]
+Size=48
+Type=Scalable
+MinSize=16
+MaxSize=256
