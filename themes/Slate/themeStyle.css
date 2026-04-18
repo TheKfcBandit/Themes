@@ -1,0 +1,161 @@
+/*
+ * SPDX-FileCopyrightText: 2026 TheKfcBandit
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+/* Colors!
+Base: #181d23
+Windows: #14191e
+Intermediate: #161b21
+Buttons: #232a33
+Button Hover: #2c3440
+Button Click: #1a2028
+Active Button: #1d3a33
+Active Button Border: #1e563e
+Dropdown Button: #1b2128
+Hover Dropdown: #2c3440
+*/
+
+/* Root */
+
+* {
+    font-family: "JetBrains Mono", "Cascadia Mono", "Consolas", monospace;
+}
+
+
+/* Buttons */
+
+QToolButton, QPushButton, QListView::item, QComboBox, QSpinBox, QLineEdit, QTabBar::tab{
+    background-color: palette(button);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 6px;
+}
+
+QToolButton:hover, QPushButton:hover, QListView::item:hover, QTabBar::tab:hover{
+    background-color: #2c3440;
+}
+
+QToolButton:pressed, QPushButton:pressed, QTabBar::tab:selected {
+    background-color: #1a2028;
+}
+
+QListView::item:selected {
+    background-color: palette(highlight);
+    border: 1px solid #1e563e;
+}
+
+
+/* Buttonception! */
+
+QComboBox::drop-down, QToolButton::menu-button, QSpinBox::up-button, QSpinBox::down-button {
+    background-color: #1b2128;
+    width: 20px;
+    margin: 1px;
+}
+
+QSpinBox::up-button, QComboBox::drop-down, QToolButton::menu-button {
+    border-top-right-radius: 8px;
+}
+
+QSpinBox::down-button, QComboBox::drop-down, QToolButton::menu-button {
+    border-bottom-right-radius: 8px;
+}
+
+QComboBox::drop-down:hover, QToolButton::menu-button:hover, QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background-color: #2c3440;
+}
+
+QComboBox::down-arrow, QToolButton::menu-arrow {
+    image: url(theme:ComboBox.png);
+}
+
+QSpinBox::up-arrow {
+    image: url(theme:SpinBoxUp.png);
+    width: 8px;
+    height: 8px;
+}
+
+QSpinBox::down-arrow {
+    image: url(theme:SpinBoxDown.png);
+    width: 8px;
+    height: 8px;
+}
+
+
+/* Checkboxes! */
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: #1b2128;
+}
+
+QCheckBox::indicator:hover {
+    background-color: #2c3440;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #1e563e;
+    image: url(theme:CheckBox.png);
+}
+
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #1b2128;
+}
+
+QRadioButton::indicator:hover {
+    background-color: #2c3440;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #1e563e;
+    image: url(theme:RadioButton.png);
+}
+
+
+/* Menu Tiles */
+
+QToolBar, QListView, QAbstractScrollArea, QGroupBox, #instanceToolBar {
+    background-color: #14191e;
+    border-radius: 12px;
+    border: 1px solid #262b35;
+    padding: 6px;
+    margin: 6px;
+}
+
+QGroupBox::title {
+    left: 12px;
+    top: -12px;
+    padding: 4px;
+}
+
+
+/* Tab Menu */
+
+QTabBar::tab {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+QTabWidget::pane {
+    border-radius: 8px;
+    background-color: #161b21;
+    border-radius: 12px;
+    border: 1px solid #262b35;
+    padding: 6px;
+    margin: 6px;
+}
+
+
+/* Fix The Colors! */
+
+QScrollArea, #scrollAreaWidgetContents, #scrollAreaWidgetContents_2 {
+    background-color: #161b21
+}

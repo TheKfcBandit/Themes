@@ -1,0 +1,30 @@
+{
+    "colors": {
+        "AlternateBase": "#1E242B",
+        "Base": "#181d23",
+        "BrightText": "#ffffff",
+        "Button": "#232a33",
+        "ButtonText": "#e7edf6",
+        "Highlight": "#1d3a33",
+        "HighlightedText": "#f7f9fc",
+        "Link": "#74c7ec",
+        "Text": "#e7edf6",
+        "ToolTipBase": "#232a33",
+        "ToolTipText": "#e7edf6",
+        "Window": "#181d23",
+        "WindowText": "#e7edf6",
+        "fadeAmount": 0.5,
+        "fadeColor": "#232a33"
+    },
+    "logColors": {
+        "Launcher": "#cba6f7",
+        "Error": "#f15b6c",
+        "Warning": "#f4d35e",
+        "Debug": "#1cd96a",
+        "FatalHighlight": "#f15b6c",
+        "Fatal": "#13181d"
+    },
+    "name": "Slate",
+    "qssFilePath": "themeStyle.css",
+    "widgets": "Fusion"
+}
